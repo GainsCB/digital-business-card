@@ -2,13 +2,13 @@
 
 :root {
   /* colors */
-  --text-clr: #FFFFF0;
-  --background-clr: #E6E6FA;
+  --text-clr: #fffff0;
+  --background-clr: #e6e6fa;
   --accent-clr: #db8f5e;
 
   /* colors for gradient */
   --background-dark-clr: hsl(270, 97%, 23%, 1);
-  --background-light-clr:  hsla(11, 86%, 63%, 0.1);
+  --background-light-clr: hsla(11, 86%, 63%, 0.1);
 
   /* font family */
   --ff-primary: "Noto Serif Ottoman Siyaq", serif;
@@ -50,11 +50,17 @@ body {
   padding: 10px 25px 0 0;
   background-color: transparent;
   border: none;
-  color: var(--text-clr);
   font-size: 25px;
 }
 
-.btn:hover {
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--text-clr);
+}
+
+a:hover {
   color: var(--accent-clr);
   cursor: pointer;
 }
