@@ -1,0 +1,60 @@
+/* Stretch Goal: Animations  */
+
+:root {
+  /* colors */
+  --text-clr: #FFFFF0;
+  --background-clr: #E6E6FA;
+  --accent-clr: #db8f5e;
+
+  /* colors for gradient */
+  --background-dark-clr: hsl(270, 97%, 23%, 1);
+  --background-light-clr:  hsla(11, 86%, 63%, 0.1);
+
+  /* font family */
+  --ff-primary: "Noto Serif Ottoman Siyaq", serif;
+
+  /* box shadow */
+  --bs: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+body {
+  background-color: var(--background-clr);
+  margin: 20px;
+  font-family: var(--ff-primary);
+}
+
+.card {
+  background-color: var(--background-clr); /* In case the img doesn't show */
+  background-image: url(./images/gaynor.jpg);
+  background-size: cover;
+  background-position: top;
+  border-radius: 20px;
+  box-shadow: var(--bs);
+
+  /* overlay  */
+  border-image: fill 1
+    linear-gradient(
+      to right,
+      var(--background-dark-clr),
+      transparent,
+      var(--background-light-clr)
+    );
+
+  color: var(--text-clr);
+  width: 400px;
+  padding: 55px 25px;
+  margin: 0 auto; /* because the width is 400px we can center with 0 auto*/
+}
+
+.btn {
+  padding: 10px 25px 0 0;
+  background-color: transparent;
+  border: none;
+  color: var(--text-clr);
+  font-size: 25px;
+}
+
+.btn:hover {
+  color: var(--accent-clr);
+  cursor: pointer;
+}
